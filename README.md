@@ -1,15 +1,12 @@
 ### Date created
-Include the date you created this project and README file.
-
+The project was created on the 14th of November 2020, and the README file on the 27th of November 2020.
 ### Project Title
-Replace the Project Title
-
+Explore US bikeshare data
 ### Description
-Describe what your project is about and what it does
-
+Build an interactive environment that allows the user to filter a dataset and show statistics.
 ### Files used
-Include the files used
-
+washington.csv
+chicago.csv
+new_york_city.csv
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
