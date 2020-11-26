@@ -3,10 +3,8 @@ The project was created on the 14th of November 2020, and the README file on the
 ### Project Title
 Explore US bikeshare data
 ### Description
-Build an interactive environment that allows the user to filter a dataset and show statistics.
+Build an interactive environment that allows the user to filter a dataset and shows statistics.
 ### Files used
-washington.csv
-chicago.csv
-new_york_city.csv
+The datafiles washington.csv, chicago.csv, new_york_city.csv were used to build an interactive environment and provide statistics.
 ### Credits
-
+- Udacity: This project is a part of Udacity's Data Science Programming with Python Nanodegree Program.
