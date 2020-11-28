@@ -67,20 +67,21 @@ def load_data(city, month, day):
 
 
 def time_stats(df):
+    # Display time statistics
     """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
     df['Start Time'] = pd.to_datetime(df['Start Time'])
-    #display the most common month
+    #Display the most common month.
     df['month'] = df['Start Time'].dt.month
     common_month = df['month'].mode()[0]
     print('The most common month is: ' + str(common_month))
-    #display the most common day of week
+    #Display the most common day of week.
     df['day'] = df['Start Time'].dt.weekday_name
     common_day = df['day'].mode()[0]
     print('The most common day is: ' + common_day)
-    #display the most common start hour
+    #Display the most common start hour.
     df['hour'] = df['Start Time'].dt.hour
     common_hour = df['hour'].mode()[0]
     print('The most common hour is: ' + str(common_hour))
@@ -94,13 +95,13 @@ def station_stats(df):
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
-    #display most commonly used start station
+    #Display most commonly used start station.
     start_station=df['Start Station'].mode()[0]
     print('The most commonly used start station is: ' + start_station)
-    #display most commonly used end station
+    #Display most commonly used end station.
     end_station=df['End Station'].mode()[0]
     print('The most commonly used end station is: ' + end_station)
-    #display most frequent combination of start station and end station trip
+    #Display most frequent combination of start station and end station trip.
     combination_trip= (df['Start Station']+' and '+df['End Station']).mode()[0]
     print('The most frequent combination of start station and end station trip: ' + combination_trip)
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -148,7 +149,7 @@ def user_stats(df,city):
 
 def display(city):
 
-    ## This function displays rows each time the user chooses to display raw data
+    ## This function displays rows each time the user chooses to display raw data.
     count = 1
     df = pd.read_csv(CITY_DATA[city])
     options=['yes','no']
